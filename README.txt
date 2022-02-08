@@ -1,9 +1,7 @@
-Serwer uruchamiany jest za pomocą pliku launch.bat, alternatywnie można zrobić to z poziomu terminala, wpisując polecenie start .\venv\Scripts\python.exe -m flask run znajdując się na poziomie głównego folderu.
+# Multimedialny interfejs dialogowy
 
-Poniższe foldery zawierają następujące elementy:
-    • res - zasoby, czyli obrazy, pliki json itp.
-    • saved_data - zapisy fragmentów audio jak i transkrypcje
-    • src - pliki źródłowe kodu w pythonie
-    • static - pliki .js i .css
-    • templates - pliki .html
-    • venv - wirtualne środowisko uruchomieniowe zawierające wszystkie potrzebne biblioteki
+Aplikacja internetowa do prowadzenia dialogu z tzw. "agentem dialogowym" w postaci zautomatyzowanego procesu odpowiadającego użytkownikowi na jego wypowiedzi. Aplikacja wykorzystuje usługi rozpoznawania i syntezy mowy, jak również konwersację z modułem sztucznej inteligencji.
+
+Część kliencka odpowiada za interakcję z użytkownikiem. Część wizualna została przedstawiona w postaci intuicyjnego interfejsu graficznego umieszczonego na stronie internetowej. Moduł rozpoznawania i nagrywania mowy ma za zadanie przechwytywać i zapisywać wypowiedzi użytkownika w formie tekstowej oraz dźwiękowej. Awatar w postaci trójwymiarowego modelu głowy człowieka jest animowany w sposób umożliwiający odtworzenie mimiki twarzy dla danego zdania agenta dialogowego.
+
+Część serwerowa odpowiada za przetwarzanie danych wysłanych przez część kliencką, jak również komunikację z zewnętrznymi API. Moduł agenta dialogowego jest jednym z zewnętrznych API, które odpowiada za dialog pomiędzy użytkownikiem końcowym a sztuczną inteligencją. Synteza mowy jest kolejnym zewnętrznym API, które przyjmuje tekst oraz zwraca plik audio z syntezą wysłanego tekstu. Wszystkie pliki, które serwer przyjmuje lub tworzy, zapisywane są na dysku twardym maszyny, z odpowiednimi nazwami zawierającymi datę ich powstania.
