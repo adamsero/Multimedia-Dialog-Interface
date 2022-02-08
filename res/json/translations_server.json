@@ -1,0 +1,19 @@
+{
+	"unintelligible": {
+		"pl-PL": "Niezrozumiałe",
+		"en-US": "Unintelligible",
+		"de-DE": "Unverständlich",
+		"fr-FR": "Inintelligible",
+		"es-ES": "Ininteligible",
+		"it-IT": "Incomprensibile"
+	},
+
+	"apology": {
+		"pl-PL": "Przepraszam, nie zrozumiałem Cię.",
+		"en-US": "I'm sorry, I couldn't understand you.",
+		"de-DE": "Tut mir leid, ich konnte dich nicht verstehen.",
+		"fr-FR": "Je suis désolé, je n'ai pas pu vous comprendre.",
+		"es-ES": "Lo siento, no pude entenderte.",
+		"it-IT": "Mi dispiace, non sono riuscito a capirti."
+	}
+}

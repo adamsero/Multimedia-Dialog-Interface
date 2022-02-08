@@ -1,0 +1,46 @@
+{
+	"home-title": {
+		"pl-PL": "Witaj w interfejsie Agenta dialogowego",
+		"en-US": "Welcome to Dialog agent interface",
+		"de-DE": "Willkommen bei der Dialog Agent-Oberfläche",
+		"fr-FR": "Bienvenue dans l'interface de Dialog agent",
+		"es-ES": "Bienvenido a la interfaz de Dialog agent",
+		"it-IT": "Benvenuti nell'interfaccia dell'agente di dialogo"
+	},
+
+	"start-button": {
+		"pl-PL": "Rozpocznij",
+		"en-US": "Begin",
+		"de-DE": "Beginne",
+		"fr-FR": "Commencer",
+		"es-ES": "Empezar",
+		"it-IT": "Inizio"
+	},
+
+	"agent-title": {
+		"pl-PL": "Agent dialogowy",
+		"en-US": "Dialog agent",
+		"de-DE": "Dialogagent",
+		"fr-FR": "Agent de dialogue",
+		"es-ES": "Agente de diálogo",
+		"it-IT": "Agente di Dialogo"
+	},
+
+	"user-name": {
+		"pl-PL": "Ty",
+		"en-US": "You",
+		"de-DE": "Du",
+		"fr-FR": "Tu",
+		"es-ES": "Tú",
+		"it-IT": "Voi"
+	},
+
+	"machine-name": {
+		"pl-PL": "Agent",
+		"en-US": "Agent",
+		"de-DE": "Agent",
+		"fr-FR": "Agent",
+		"es-ES": "Agente",
+		"it-IT": "Agente"
+	}
+}

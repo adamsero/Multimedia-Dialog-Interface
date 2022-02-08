@@ -1,0 +1,79 @@
+{% extends "base.html" %} {% block head %} {% endblock %} {% block body %}
+
+    <script src="Build/Builds.loader.js"></script>
+
+    <br/>
+    <h1 class="translatable" id="agent-title">Agent Dialogowy</h1>
+    <br/>
+
+    <div class="main-container">
+        <textarea
+                id="dialogBox"
+                name="dialogBox"
+                rows="25"
+                cols="120"
+                readonly
+        ></textarea>
+
+        <canvas id="unity-canvas" style="width: 300px; height: 300px; background: #1F2739"></canvas>
+    </div>
+
+    <div class="bottom-bar">
+        <div class="select-container" id="select-container">
+            <label for="behavior-select">Choose agent behavior:</label>
+            <div style="width: 150px;">
+                <select class=" fstdropdown-select" data-searchdisable="true" id="behavior-select"
+                        onchange="changeBehavior()">
+                    {% for data in select_data %}
+                        <option value={{ data[0] }}>{{ data[1] }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+        <input
+                id="start-stop"
+                name="start"
+                type="image"
+                onclick="toggleRecognition()"
+                width="30"
+                height="30"
+                src="/get_icon/play.png"
+                alt="Play"
+        />
+        <input
+                type="image"
+                onclick="clearDialogBox()"
+                width="30"
+                height="30"
+                src="/get_icon/clear.png"
+                alt="Clear"
+        />
+    </div>
+    <br/>
+
+    <div
+            class="lds-ripple"
+            id="animation"
+            style="margin: auto; visibility: hidden"
+    >
+        <div></div>
+        <div></div>
+    </div>
+
+    <audio id="audioPlayer" style="display: none">
+        <source src="" type="audio/mpeg"/>
+    </audio>
+
+    <script src="{{ url_for('static', filename='js/WebAudioRecorder.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/audioManagement.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dialogBox.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/fstdropdown.min.js') }}"></script>
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="{{ url_for('static', filename='css/fstdropdown.min.css') }}"
+    />
+
+{% endblock %}
